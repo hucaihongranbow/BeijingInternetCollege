@@ -80,7 +80,6 @@ var  page = {
         });
     },
     "getPageListModel":function(pageCount,currentPage){
-        huidiao()
         var prePage = currentPage-1;
         var nextPage = currentPage+1;
         var prePageClass ="pageItem";
@@ -118,44 +117,9 @@ var  page = {
         }
         appendStr+="<li  class='"+nextPageClass+"' page-data='"+nextPage+"' page-rel='nextpage'>&gt;</li>";
         appendStr+="<li class='gongjiuye' page-data='"+pageCount+"'>共"+showPageNum+"页</li>";
-        var liis = document.getElementsByTagName("li");
-        liis.onclick=function(){
-           return  huidiao();
-
-        }
-       huidiao();
+ 
        return appendStr;
-       function huidiao(){
-     window._bd_share_config={
-            "common":{
-                "bdSnsKey":{},
-                "bdText":"",
-                "bdMini":"2",
-                "bdPic":"",
-                "bdStyle":"0",
-                "bdSize":"16"},
-                "share":{},
-            "image":{
-                "viewList":[
-                "qzone",
-                "tsina",
-                "tqq",
-                "renren",
-                "weixin"],
-                "viewText":"分享到：",
-                "viewSize":"16"
-            }
-            };
-            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
 
-        $(".share").mouseenter(function (){
-            $(".share").animate({'left':'0'},300);
-        });
-        $(".share").mouseleave(function(){
-                $(".share").animate({'left':'-230px'},300);
-              });
-
-        } 
 }
  
 }

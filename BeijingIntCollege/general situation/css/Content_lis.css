@@ -18,31 +18,30 @@ a:hover{
 }
 #demoContent{
 	/* margin: 0;*/
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	list-style-type: none;
 	padding:0;
 	margin: 0;
 }
-..contai_tiao{
+.contai_tiao{
 	min-width: 200px;
 }
 .container{
-	  max-width: 1000px;
+	  
 	  padding: 0;
 }
 .contai{
 	 margin-bottom: 90px;
+	 width: 1000px;
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-	.contai ul li {
-		       width: 500px;
-		       margin-bottom: 10px;
+@media screen and (max-width: 768px){
+	.contai{
+		   width: 100%;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-	.imgss{
-		   width: 211px;
-		   height: 151px;
+@media screen and (max-width: 768px){
+	.contai ul li {
+		   width: 100%;
 	}
 }
 @media screen and (min-width: 330px) and (max-width: 767px) {
@@ -52,8 +51,6 @@ a:hover{
 }
 @media screen and (min-width: 330px) and (max-width: 767px) {
    .container ul li .second_p{
-   	   height:120px;
-   	   width: 100%;
 	   font-size: 20px;
    }
    .container ul li .second_a{
@@ -67,24 +64,13 @@ a:hover{
 	}
 }
 @media screen and (max-width: 500px){
-	.contai ul li{
-		height:500px;
-		position: relative;
-	}
 	.container ul li  .fist_a{
 		       font-size: 22px;
 	}
 }
-/*@media screen and (max-width: 100px) and (max-width: 1000px){
-	.contai ul li{
-		position: relative;
-		
-	}
-}*/
 @media screen and (max-width: 330px){
    .container ul li .second_p{
 	   font-size: 20px;
-	   height: 150px;
    }
 }
 @media screen and (max-width: 766px){
@@ -103,13 +89,6 @@ a:hover{
 	   width:98%;
    }
 }
-/*@media screen and (min-width: 10px) and (min-width: 1000px) {
-	.container ul li  .second_a{
-		      position: absolute;
-		      bottom: -40px;
-		      right: 15px;
-	}
-}*/
 #demoContent li.Content_lis{
 	margin-right: 15px;
 	padding-right:20px;
@@ -161,7 +140,6 @@ a:hover{
 .second_p{
 	text-indent: 2em;
 	font-size: 13px;
-	height: 90px;
 }
 
      .col-md-12{
