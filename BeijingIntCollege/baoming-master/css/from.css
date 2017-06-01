@@ -10,7 +10,8 @@
 }
 .tow_content{
   width: 1000px;
-  height: 1552px;
+  /*height: 1552px;*/
+  overflow: hidden;
   margin: 0 auto;
 }
 .chm_tag{
@@ -20,7 +21,7 @@
   color: #333;
   background-size: 100% 100%;
   line-height: 28px;
-  font-size:14px;
+  font-size: 12px;
   padding-left:30px;  
   margin: 10px 0;
 }
@@ -44,7 +45,7 @@
   width: 100%;
   height: 38px;
   line-height: 38px;
-  font-size: 1.5em;
+  font-size: 16px;
   color: #fff;
   padding-left:20px; 
   font-family: "microsoft yahei";
@@ -53,17 +54,17 @@
 .zhinan_formation{
   width: 100%;
   padding-left: 20px;
-  font-size: 1em; 
+  font-size: 12px; 
   font-family: simsun;
 }
 .zhinan_formation li{
   list-style: none;
   width: 100%;
-  line-height: 28px;
+  line-height: 25px;
 }
 .zhinan_formation li a{
   color: rgb(178, 34, 34);
-  font-size: 1em;
+  font-size: 14px;
 }
 .fengei{
   margin-bottom: 60px;
@@ -71,14 +72,36 @@
 .dianhua{
   width: 29%;
   height: 211px;
-  background: url(../img/enroll03.jpg) no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  background-position: center;
   position: relative;
+  background-color: red;
+}
+.dianhua img{
+width:100%;
+height: 100%;
+}
+.dianhua .onlineZi{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -87px;
+  width: 194px;
+  height: 37px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 37px;
+  z-index: 100;
+}
+.dianhua .onlineZi a{
+    text-decoration: none;
+    color: #333;
+}
+.dianhua .onlineZi a:hover{
+    color: #333;
 }
 .left{
   float: left;
+  border: 1px solid #CCD3DD;
 }
 .form-control{
   border: 1px solid #B2CFDA;
@@ -91,6 +114,13 @@
   height: 27px;
   line-height: 27px;
   border-radius: 3px;
+  font-size: 13.3333px;
+}
+.radio-inline{
+  font-size: 12px;
+}
+.nianZi{
+  font-size: 12px;
 }
 .from_div{
   float: right;
@@ -105,11 +135,12 @@
   color: #fff;
   padding-left:20px; 
   min-width: 380px;
+  font-size: 16px;
   font-family: "microsoft yahei";
   background-image: url(../img/enroll02.png);
 }
 .from_ti span{
-  font-size: 0.8;
+  font-size: 12.8px;
   color: #999;
   padding: 0 0 0 1em;
 }
@@ -160,7 +191,7 @@
     font-family: "microsoft yahei";
     text-align: center;
     color: #333;
-    font-size: 1.6em;
+    font-size: 16px;
     border: 0;
     text-indent: 15px;
     cursor: pointer;
@@ -172,8 +203,8 @@
 @media screen and (max-width:1037px) {
       .tow_content{
         width: 100%;
-        height: 2173px;
       }
+
       .yanzhan1{
         width: 100%;
         margin-left: 22%;
@@ -186,6 +217,9 @@
       #xian{
         display: block;
         width:90%;
+      }
+       .zhushi{
+        display: none;
       }
         .control-label{
          white-space:nowrap;
@@ -201,12 +235,11 @@
         height: 300px;
       }
       .dianhua{
-        width: 100%;
-        height: 350px;
+        width: 100vw;
+        height: 71vw;
       }
       .tow_content{
         width: 100%;
-        height: 3650px;
       }
       .from_div{
         width: 100%;
@@ -225,97 +258,67 @@
 
    /* 分享开始*/
          .share {
-          border: none;
-          position: fixed;
-          top: 104px;
-          left: -230px;
-          z-index: 99;
-         }
-       .share_box {
-        width: 230px;
-        height: 325px;
-        color: rgb(90,90,90);
-        position: relative;
-       }
-       .share_right {
-            position: absolute;
-            right: -27px;
-            top: 17%;
-            width: 30px;
-            height: 90px;
-            background-color: rgb(70,119,230);
-            text-align: center;
-            cursor: pointer;
-            border-radius: 0 5px 5px 0;
-       }
-       .share_right p {
-          margin-top: 19px;
-        font-size: 17px;
-        color: white;
-       }
-       .share_box .share_top {
-        width: 100%;
-        height: 30px;
-        background-color: rgb(246,246,246);
-        line-height: 30px;
-       }
-    
-        .share_box .share_center {
-          width: 100%;
-          height: 265px;
-          overflow: hidden;
-          background-color: white;
-        }
-        .share_box .share_center .share_platform {
-           width: 100%;
-             height: 100%;
-             margin-left: 18px;
-        }
-        .share_box .share_center .share_platform a {
-          display: inline-block;
-          width: 90px;
-          height: 21px;
-          line-height: 21px;
-          text-indent: 10px;
-        }
-        .share_box .share_bottom {
-          width: 100%;
-          height: 30px;
-          background-color: rgb(246,246,246);
-          
-        }
-        .share_box .share_bottom a{
-            float: right;
-        }
+  position: fixed;
+  top: 16%;
+  left: 0px;
 
-   /* 分享结束/
+}
+.share_box {
+  width: 0px;
+  height: 325px;
+  color: rgb(90,90,90);
+  position: relative;
+  background-color: red;
+overflow: hidden;
+}
+.share_right {
+    position: absolute;
+    right: -27px;
+    top: 17%;
+    width: 30px;
+    height: 90px;
+    background-color: rgb(70,119,230);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
 
-   /*分享到 开始*/
-     
-        .bdsharebuttonbox_box{
-          width: 100%;
-          height: 37px;
-          background-color: #000;
-          opacity: 0.7;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          display: none;
-        }
-        /*.bdsharebuttonbox_box:*/
-        .bdsharebuttonbox_box .bdsharebuttonbox{
-            width: 140px;
-            height: 37px;
-            position: absolute;
-            top: 5px;
-            right: 10px; 
-        }
-        .bdsharebuttonbox_box .fx_box{
-            height: 37px;
-            color: white;
-            position: relative;
-            top: -23px;
-            left:-55px;  
-        }
-        /*分享到 结束*/
+.share_right p {
+margin-top: 19px;
+  font-size: 17px;
+  color: white;
+}
+.share_box .share_top {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(246,246,246);
+  line-height: 30px;
+}
 
+.share_box .share_center {
+  width: 100%;
+  height: 265px;
+  overflow: hidden;
+  background-color: white;
+}
+.share_box .share_center .share_platform {
+   width: 100%;
+ height: 100%;
+ margin-left: 18px;
+}
+.share_box .share_center .share_platform a {
+  display: inline-block;
+  width: 88px;
+  height: 21px;
+  line-height: 21px;
+text-indent: 10px;
+}
+.share_box .share_bottom {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(246,246,246);
+  
+}
+.share_box .share_bottom a{ 
+float: right;
+}

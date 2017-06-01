@@ -175,11 +175,11 @@ article .container .strip .home{
 	margin-left: 25px
 }
 article .container .strip  i{
-	font-size: 1.2em;
+	font-size: 1.158em;
 }
 @media screen and (max-width: 768px) {
 	article .container .strip {
-		font-size: 1.2em;
+		font-size: 1.158em;
 	}
 	
 }
@@ -216,7 +216,7 @@ article .container .code{
 	}
  article .container .code ul li:nth-child(2){
         float: left;     
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 38px;
         margin: 0 -35px;
 	}
@@ -280,9 +280,10 @@ article .container .new,.education,.employment {
     
 	
 	dl dd{
- 	font-size: 1em;
+ 	font-size: 1.158em;
     text-indent: 2em;
     line-height: 2;
+    font-family: normal;
  }
 	
 }
@@ -349,7 +350,7 @@ article .container .make{
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
   article  .container .make {
     background: #F9AB2C;
     height: auto;

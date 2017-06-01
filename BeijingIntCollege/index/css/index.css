@@ -56,6 +56,7 @@ div.guide_content div.guide_link a {
 	/*招考指南链接栏*/
     line-height: 1.3;
     color: rgb(178, 34, 34);
+    font-size: 14px;
 }
 a.guide_state {
 	/*招生动态*/
@@ -133,7 +134,7 @@ div.intro_text p {
 	    top: 5px;
 	}
 	div.intro_pic .scroll_img {
-		width: 610px;
+		width: 605px;
 		position: relative;
 		overflow: hidden;
 	}
@@ -201,6 +202,7 @@ ul#major-tab li a {
 	color: #fff;
 }
 div.major_padding {
+	max-height:341px;
 	padding: 10px;
 	border: 1px solid #CCD3DD;
 	background: url("../img/major02.jpg") no-repeat;
@@ -211,11 +213,15 @@ div.major_padding h3,div.major_padding p {
 	margin: 0;
 }
 div.major_padding h3 {
-	font-size: 1em;
+	font-size: 0.95em;
 	font-weight: bold;
+	font-family: "simsun";
+	line-height: 200%;
 }
 div.major_padding p {
 	text-indent: 2em;
+	font-size: 0.95em;
+	font-family: "simsun";
 }
 div.major_padding p.mini_title {
 	text-indent: 4em;
@@ -311,7 +317,7 @@ ul,ol{
 .Dg_txt1 h3,.Dg_txt2 h3{
 	font-weight: bold;
     text-indent: 2em;
-    font-size: 1em;
+    font-size: 1.2em;
     vertical-align: baseline;
     line-height:1.58;
 }
@@ -342,13 +348,13 @@ ul,ol{
 }
 .Dg_Text_1 h3{
 	font-weight: bold;
-    font-size: 1.143em;
+    font-size: 1.2em;
     line-height:30px;
     font-family: "microsoft yahei";
 }
 .Dg_Text_1 p{
 	color: #4e4e4e;
-    font-size: 0.8em;
+    font-size: 1em;
     text-indent: 2em;
     line-height:1.8;
 }
@@ -380,7 +386,6 @@ ul,ol{
 .Dg_Gd{
 	float: right;
 	font-size:0.6em; 
-	font-family: simsun;
 	height:36px;
 	margin-right:10px; 
 }
@@ -402,23 +407,17 @@ ul,ol{
 	}
 	.Dg_Text_1 h3{
 		padding:0 6%;
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.Dg_txt1,.Dg_txt2{
 		padding:6%;
 	}
 	.Dg_Text_1 p{
 		padding:0 6%;
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.Dg_txt1 h3,.Dg_txt2 h3{
-		font-size:1.5em; 
-	}
-	.Dg_txt1 p,.Dg_txt2 p{
-		font-size: 1.3em;
-	}
-	.Dg_nev ul li a span{
-		font-size: 1.2em;
+		font-size:1.2em; 
 	}
 }
 .Dg_center{
@@ -431,6 +430,7 @@ ul,ol{
     }
 	.Dg_Img_1,.Dg_Text_1{
 	    height:265px;
+	    overflow:hidden; 
 	}
 	.Dg_Text_1{
 		padding:20px 5% 20px 0 ;
@@ -446,15 +446,9 @@ ul,ol{
 	margin:0 -15px;
 	position: relative;
 }
-/*.LFY_Campus_Scenery .bdsharebuttonbox{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 100;
-}*/
 .LFY_slideshow{
-	/*border: 1px solid red;*/
 	padding: 0;
+	max-height:303px;
 }
 .LFY_slideshow .carousel-indicators{
 	background: black;
@@ -497,8 +491,6 @@ ul,ol{
 	border-radius: 5px;
 	color: #333;
 	font-size:1.2em;
-	font-weight:400;
-	font-family: "microsoft yahei";
 }
 .LFY_introduce ul li a:hover{
 	text-decoration: none;
@@ -512,7 +504,6 @@ ul,ol{
 	vertical-align: baseline;
   background: transparent;
   font-weight: normal;
-  font-size: 13px;
   line-height: 1.7;
   text-align: justify;
   text-indent: 2em;
@@ -546,12 +537,10 @@ border-bottom:1px solid #CCD3DD;
    	text-align: center;
 }
 .schSystem_bg{
-	font-size: 0;
 	height:47px;
 	background-image:url(../img/major01.png);
 	box-shadow: 0 0 3px rgba(0,0,0,.2);
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
+	border-radius: 2px;
 }
 @media(max-width:1200px){
 	.schSystem_bg,.schSystem_bg .bg{
@@ -576,36 +565,31 @@ border-bottom:1px solid #CCD3DD;
 		}
 }
 .schSystem_bg ul li{
-	width:160px;
+	min-width:160px;
 }
 .schSystem_bg ul{
 	box-shadow: 0 0 3px rgba(0,0,0,.2);
-	border-bottom-right-radius: 2px;
-	border-bottom-left-radius: 2px;
 }
 .schSystem_bg .bg span{
-	height:47px;
-	font-size: 18px;
 	color: #164575;
 }
 .schSystem_bg .bg a{
-	height:47px;
-	line-height: 47px;
-	width:180px;
 	color:#157585;
-	font-size: 18px;
 }
 .func_botton a{
-	height:47px;
 	text-align: center;
-	line-height: 47px;
-	width:160px;
 	color:#fff;
-	font-size: 18px;
 }
-.schSystem_bg .school .func_botton .hover_a:hover{
+ .func_botton .hover_a{
 			background-color:#202e57;
 		}
+ .func_botton .hover_a:hover{
+			background-color:#202e57;
+		}
+#major-tab li a{
+	background-color:transparent;
+}
+		
 /*校内系统结束*/
 /*<!-- 左侧分享 -->*/
      .share {
@@ -671,3 +655,17 @@ border-bottom:1px solid #CCD3DD;
         float: right;
 	  }
 /*<!-- 左侧分享结束 -->*/
+.more{
+	font-family: "simsun";
+	font-size:0.8em; 
+}
+.guide_link,.intro_text,#tab-news h3,#tab-news p,.Dg_nev ul li,.Dg_pand p,.Dg_Text_1 p{
+	font-family: "simsun";
+	font-size:0.95em;
+}
+.JHpic{
+	max-width:110%;
+}
+.content{
+	padding-top: 5px;
+}

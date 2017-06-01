@@ -116,7 +116,7 @@ var  page = {
 
             appendStr+="<li class='"+itemPageClass+"' page-data='"+pageNumber+"' page-rel='itempage'>"+pageNumber+"</li>";
         }
-        appendStr+="<li onclick="+'huidiao()'+" class='"+nextPageClass+"' page-data='"+nextPage+"' page-rel='nextpage'>&gt;</li>";
+        appendStr+="<li  class='"+nextPageClass+"' page-data='"+nextPage+"' page-rel='nextpage'>&gt;</li>";
         appendStr+="<li class='gongjiuye' page-data='"+pageCount+"'>共"+showPageNum+"页</li>";
         var liis = document.getElementsByTagName("li");
         liis.onclick=function(){

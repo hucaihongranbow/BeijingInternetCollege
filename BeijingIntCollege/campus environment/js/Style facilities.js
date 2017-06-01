@@ -3,8 +3,8 @@ window.onload = function ()
 	// 大图
 	var big_img = document.getElementById('bg_img');
 	var imgArr = ["img/46.jpg","img/47.jpg",
-	    "img/48.jpg","img/49.png",
-	    "img/50.jpg","img/51.jpg","img/52.png","img/53.jpg",
+	    "img/48.jpg","img/49.jpg",
+	    "img/50.jpg","img/51.jpg","img/52.jpg","img/53.jpg",
 	    "img/54.jpg","img/55.jpg","img/56.jpg",
 	    "img/57.jpg","img/58.jpg","img/59.jpg",
 	    "img/60.jpg","img/61.jpg"];

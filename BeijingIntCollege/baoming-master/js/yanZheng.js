@@ -1,5 +1,6 @@
 window.onload = function(){
 	// 考生号，限输入11位纯数字
+	
 	var inputEmail3 = document.getElementById("inputEmail3");
 	var yanzheng01 = document.getElementsByClassName("yanzheng01")[0];
 	inputEmail3.onblur=function(){

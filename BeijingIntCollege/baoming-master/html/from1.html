@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 initial-scale=1 maximum-scale=2 minimum-scale=1 user-scalable=no"><!-- 移动优先 -->
     <meta name="website" content="http://www.lihui-v.top">
-    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
     <link rel="stylesheet" type="text/css" href="../css/from.css">
 </head>
 <body>
@@ -70,13 +70,13 @@
           <li class="dropdown">
             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" id="dropdownMenu4" aria-haspopup="true" aria-expanded="true">就业合作</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu4" style="padding: 1px 0 0;">
-                <li><a href="../../Enrollment and job/jiuye.html" class="lastChild">实习就业</a></li>
+                <li><a href="../../Enrollment_and_job/jiuye.html" class="lastChild">实习就业</a></li>
              </ul>
           </li>
           <li class="dropdown">
             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" id="dropdownMenu5" aria-haspopup="true" aria-expanded="true">招生信息</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu5" style="padding: 1px 0 0;">
-                <li><a href="../../Enrollment and job/zsdt.html" class="lastChild">招生动态</a></li>
+                <li><a href="../../Enrollment_and_job/zsdt.html" class="lastChild">招生动态</a></li>
              </ul>
           </li>
           <li><a href="javascript:;" class="apply">我要报名</a></li>
@@ -105,7 +105,7 @@
               </div>
           </div> 
           <div class="from_div" id="from_div">
-            <div class="from_ti">北京网络职业学院网上报名表<span>注：*号内容均为必填内容</span></div>
+            <div class="from_ti">北京网络职业学院网上报名表<span class="zhushi">注：*号内容均为必填内容</span></div>
             <div class="from_text">
         
              <form  class="form-horizontal" name="chm_del"  method="post" onsubmit="return fun(shet);" id="shet">
@@ -153,7 +153,7 @@
                   <div id="xian"></div>
                   <div class="form-group">
                         <label for="bron_day" class="col-sm-2 control-label juli">*出生日期</label>
-                       <div class="col-sm-9">
+                       <div class="col-sm-9 nianZi">
                               <select id="bron_year" class="select_style geli">
                                 <option value="请选择">请选择</option>
                               </select>年
@@ -393,24 +393,12 @@
             </div>
         </div> 
 
-        <div class="dianhua left" id="dianhua">
-
-             <!-- 分享到 开始 -->
-            <div class="bdsharebuttonbox_box" id="dianhuachlider">
-                <div class="bdsharebuttonbox">
-                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                <a href="#" class="bds_more" data-cmd="more"></a>
-                <span class="fx_box">分享到：</span>
-                </div>
-            </div>
-           <!-- 分享到 结束 -->
-
-            <div class="lianjiie"></div>
+        <div class="dianhua left" id="dianhua">  
+          <img src="../img/enroll03.jpg" id="dianhua1">
+          <div class="onlineZi" ><a href="#" >在线咨询</a></div>
+        
         </div>
+
     </div> 
   </div>
 </div>
@@ -558,51 +546,61 @@
         option3.value=i;
         bron_day.appendChild(option3);
     } 
-    var riqi_id=document.getElementById('riqi_id');
-    bron_year.onclick=function(){
-          bron_year.onmouseout=function(){
-            if(bron_year.value!="a"){
-                bron_month.value=1;
-                bron_day.value=1;
-                riqi_id.style.opacity=0;
-              }else{
-                bron_month.value="b";
-                bron_day.value="c";
-                riqi_id.style.opacity=1;
-              }
-          }
-  }
+  //   var riqi_id=document.getElementById('riqi_id');
+  //   bron_year.onclick=function(){
+  //         bron_year.onmouseout=function(){
+  //           if(bron_year.value!="a"){
+  //               bron_month.value=1;
+  //               bron_day.value=1;
+  //               riqi_id.style.opacity=0;
+  //             }else{
+  //               bron_month.value="b";
+  //               bron_day.value="c";
+  //               riqi_id.style.opacity=1;
+  //             }
+  //         }
+  // }
  
-  var tow_content_id=document.getElementById('tow_content_id');
-  var from_div=document.getElementById('from_div');   
-  // 分享开始
-        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+  // var tow_content_id=document.getElementById('tow_content_id');
+  // var from_div=document.getElementById('from_div');   
+  window._bd_share_config={
+    "common":{
+        "bdSnsKey":{},
+        "bdText":"",
+        "bdMini":"2",
+        "bdPic":"",
+        "bdStyle":"0",
+        "bdSize":"16"
+         },
+    "share":{},
+    "image":{
+            "viewList":["qzone","tsina","tqq","renren","weixin"],
+            "viewText":"分享到：",
+            "viewSize":"16"
+        }
+    };
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    // var helpTime = null;
+
     $(".share").mouseenter(function (){
-      $(".share").animate({'left':'0'},300);
+         // clearTimeout(helpTime);
+        // setTimeout(function(){
+           $(".share_box").animate({'width':'230px'},300);
+       // },50);
+      
+       
     });
     $(".share").mouseleave(function(){
-            $(".share").animate({'left':'-230px'},300);
-          });   
-
-  // 分享到 开始
-window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-
-   var dianhua=document.getElementById("dianhua");
-   var dianhuachlider=document.getElementById("dianhuachlider");
-   dianhua.onmouseover = function () {
-    dianhuachlider.style.display= "block";
-    dianhua.onmouseout = function () {
-    dianhuachlider.style.display= "none"; 
-    } 
-    
-  }
-  
-
- // 分享到 结束 
+         // clearTimeout(helpTime);
+       // setTimeout(function(){
+           $(".share_box").animate({'width':'0'},300);
+       // },50);
+            
+    });
 </script>
 <script type="text/javascript" src="../js/yanZheng.js"></script>
 <script type="text/javascript">
-  var form=document.getElementsByTagName('form')[0];
+var form=document.getElementsByTagName('form')[0];
 var selects=document.getElementsByTagName('select');
 var blank=document.getElementsByClassName('blank');
 var yanzheng=document.getElementsByClassName('yanzheng');

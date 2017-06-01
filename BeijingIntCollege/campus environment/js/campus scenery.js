@@ -5,8 +5,8 @@ window.onload = function ()
 	var imgArr = ["img/25.jpg","img/26.jpg",
 	    "img/45.jpg","img/28.jpg",
 	    "img/29.jpg","img/30.jpg","img/31.jpg","img/32.jpg",
-	    "img/33.jpg","img/34.png","img/35.png",
-	    "img/36.jpg","img/37.png","img/38.jpg",
+	    "img/33.jpg","img/34.jpg","img/35.jpg",
+	    "img/36.jpg","img/37.jpg","img/38.jpg",
 	    "img/39.jpg","img/40.jpg"];
     
     // 文字描述
