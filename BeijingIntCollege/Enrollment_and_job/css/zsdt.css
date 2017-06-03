@@ -100,7 +100,7 @@ border-top:10px solid white;
 border-left: 5px solid white;
 border-right: 5px solid white;
 background-image: url(../img/major02.jpg);
-padding-bottom:15px;
+padding-bottom:5px;
 padding-top:15px;
 
 }
@@ -110,10 +110,9 @@ height: 100%;
 }
 .word_page{
 padding: 0px;
-margin: 0;
+margin-bottom: 10px;
 position: relative;
 top: -10px;
-/*width: 235px;*/
 height: 148px;
 }
 .word_page span a:nth-child(1){
@@ -126,8 +125,13 @@ height: 35px;
 line-height: 35px;
 text-decoration: none;
 font-family: '微软雅黑';
-/*position:relative;
-top: 10px; */
+
+}
+@media screen and (max-width: 1000px) {
+.word_page span a:nth-child(1){
+       position:relative;
+       top: 10px; 
+    }
 }
 .word_page span p:nth-child(2){
 height:105px;
